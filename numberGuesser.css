@@ -1,0 +1,42 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin : 0;
+    padding: 0;
+    background-color: rgb(80, 78, 78);
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+    border-radius: 5px;
+}
+.content{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.input{
+    display : flex;
+    gap: 5px;
+}
+.input #guess-input{
+    height: 30px;
+    outline: none;
+    border-radius:3px;
+}
+.input #submit{
+    height: 30px;
+    background-color:transparent;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(53, 53, 212);
+}
+#guess-input:focus{
+    border: 1px solid blue;
+}
